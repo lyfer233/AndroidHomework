@@ -18,7 +18,7 @@ class LoginActivity2 : AppCompatActivity() {
             var key = 0
             val userName : EditText = findViewById(R.id.editTextTextPersonName)
             val password : EditText = findViewById(R.id.editTextTextPassword)
-            if (password.toString() == "xyw"){
+            if (password.text.toString().equals("xyw")){
                 key = 1
             }
             if (key == 1){
