@@ -9,7 +9,7 @@ class MyDatabaseHelper(val context: Context, name: String, version: Int) :
         SQLiteOpenHelper(context, name, null, version){
             private val createB = "create table List (" +
                     "id integer primary key autoincrement," +
-                    "username text" +
+                    "username text," +
                     "password text)"
 
     override fun onCreate(db: SQLiteDatabase) {
@@ -18,7 +18,6 @@ class MyDatabaseHelper(val context: Context, name: String, version: Int) :
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
-        TODO("Not yet implemented")
     }
 
 }
