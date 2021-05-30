@@ -11,6 +11,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()                    //隐藏标题栏
         setContentView(R.layout.activity_main)
+        val dbHelper = MyDatabaseHelper(this, "SignList.db", 1)
+        dbHelper.writableDatabase
         val buttonIn: Button = findViewById(R.id.button1)
         buttonIn.setOnClickListener{
             val intent = Intent(this, LoginActivity2::class.java)

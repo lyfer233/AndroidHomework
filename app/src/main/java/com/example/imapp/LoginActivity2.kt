@@ -14,6 +14,7 @@ class LoginActivity2 : AppCompatActivity() {
         supportActionBar?.hide()                    //隐藏标题栏
         setContentView(R.layout.activity_login2)
         val buttonLogin : Button = findViewById(R.id.buttonLogin)
+        //登录按钮事件
         buttonLogin.setOnClickListener{
             var key = 0
             val userName : EditText = findViewById(R.id.editTextTextPersonName)
@@ -29,6 +30,11 @@ class LoginActivity2 : AppCompatActivity() {
             else{
                 Toast.makeText(this, "密码错误", Toast.LENGTH_SHORT).show()
             }
+        }
+        val buttonSign : Button = findViewById(R.id.buttonSign)
+        buttonSign.setOnClickListener{
+            val intentS = Intent(this, signActivity::class.java)
+            startActivity(intentS)
         }
     }
 }
