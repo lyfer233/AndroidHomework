@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DataExportManager">
@@ -24,11 +24,7 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="cdc3977c-78ca-4896-8927-91d430cd6b97">
-        <schema name="main" object-types="table, view, constraint, index, column, dataset trigger" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="cdc3977c-78ca-4896-8927-91d430cd6b97">
@@ -38,9 +34,7 @@ select * from "List";]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="cdc3977c-78ca-4896-8927-91d430cd6b97" object-ref="schemas/main/tables/List" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="cdc3977c-78ca-4896-8927-91d430cd6b97" />
